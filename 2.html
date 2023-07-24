@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+    <!-- fontawesome套件-->
+    <script src="https://kit.fontawesome.com/76c1dd2ca6.js" crossorigin="anonymous"></script>
+    <!-- 引入檔css、js -->
+    <link rel=stylesheet type="text/css" href="2.css">
+    <link rel="stylesheet" href="attractions.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="back_to_top.css">
+    <script src="attractions.js"></script>
+    <script src="back_to_top.js"></script>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<button type="button" id="BackTop" class="toTop-arrow"></button>
+<script>
+    $(function () {
+        $('#BackTop').click(function () {
+            $('html,body').animate({ scrollTop: 0 }, 333);
+        });
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 300) {
+                $('#BackTop').fadeIn(222);
+            } else {
+                $('#BackTop').stop().fadeOut(222);
+            }
+        }).scroll();
+    });
+</script>
+
+<body bgcolor="white">
+    <div class="banner">
+        <img src="1.gif">
+        <header class="nav-bar">
+            <ul>
+                <li>
+                    <a href="#"><i class="fa-solid fa-tree icons"></i><span> 戶外踏青</span></a>
+                    <ul>
+                        <li><a href="">風鈴木花道</a></li>
+                        <li><a href="">魚寮遺址</a></li>
+                        <li><a href="">小葉欖仁綠色隧道</a></li>
+                        <li><a href="">有機稻米專區</a></li>
+                        <li><a href="">水牛公園</a></li>
+                        <li><a href="">有兒菈菈樹花園</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-utensils icons"></i><span>飲食攻略</span></a>
+                    <ul>
+                        <li><a href="">活動辦理1</a></li>
+                        <li><a href="">活動辦理1</a></li>
+                        <li><a href="">活動辦理1</a></li>
+                        <li><a href="">活動辦理1</a></li>
+                        <li><a href="">活動辦理1</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-building-columns icons"></i><span>藝文館所</span></a>
+                    <ul>
+                        <li><a href="activity.html">活動辦理1</a></li>
+                        <li><a href="activity.html">活動辦理1</a></li>
+                        <li><a href="activity.html">活動辦理1</a></li>
+                        <li><a href="activity.html">活動辦理1</a></li>
+                        <li><a href="activity.html">活動辦理1</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-gopuram icons"></i><span>廟宇巡禮</span></a>
+                    <ul>
+                        <li><a href="activity.html">活動辦理1</a></li>
+                        <li><a href="activity.html">活動辦理1</a></li>
+                        <li><a href="activity.html">活動辦理1</a></li>
+                        <li><a href="activity.html">活動辦理1</a></li>
+                        <li><a href="activity.html">活動辦理1</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+    </div>
+    <div class="box">
+        <div class="search">
+            <span class="icon"><i class="fa fa-search"></i></span>
+            <input type="search"
+                   id="search"
+                   placeholder="Search..." />
+        </div>
+    </div>
+    <p>
+        <font size="6" ; align-items: center;>
+            太保為嘉義縣內的一個城市，位於嘉義縣中西部，農業種植面積廣闊，也是嘉南平原的物產精華區，大部份以種植水稻為主，部份農田轉作洋香瓜、甜玉米、蕃茄、蔬菜等等；其中洋香瓜、甜玉米、蕃茄也是當地的特產。
+            太保地方的開發，由鄭氏贈予水牛八頭做為開墾用，將數千公頃荒蕪之地開關成良田，歲歲皆豐收，大家就將此地稱「水虞厝」，以稱讚「水牛之功」，且於清朝乾隆卅五年，一位有名的將軍在此誕生了，他就是王得祿將軍。
+        </font>
+    </p>
+    </div>
+    <div class="container">
+        <div class="item">
+            <a href="1.html"><img src="魚寮遺址.jpg" alt=""></a>
+            <p>
+                <font size="6">魚寮遺址</font>
+            </p>
+        </div>
+        <div class="item">
+            <img src="星星水產.jpg" alt="">
+            <p>
+                <font size="6">星星水產</font>
+            </p>
+        </div>
+        <div class="item">
+            <img src="脆皮臭豆腐.jpg" alt="">
+            <p>
+                <font size="6">脆皮臭豆腐</font>
+            </p>
+        </div>
+        <div class="item">
+            <img src="故宮南院.jpg" alt="">
+            <p>
+                <font size="6">故宮南院</font>
+            </p>
+        </div>
+        <div class="item">
+            <img src="築日食堂.jpg" alt="">
+            <p>
+                <font size="6">築日食堂</font>
+            </p>
+        </div>
+    </div>
+    <font size="6">_____________________________________________________________________________________</font>
+    <center>
+        <video src="1.mp4" controls width=1000px;height =1000px; margin-top：5px>
+        </video>
+
+        </div>
+</body>
+
+</html>
+
